@@ -3,9 +3,11 @@
 // @version      0.1
 // @description  Create an easy to copy section heading link.
 // @updateURL    https://github.com/jmahler/monkeyscripts/raw/master/wiki-link.js
-// @homepage     https://github.com/jmahler/monkeyscripts
-// @author       Jeremiah Mahler <jmmahler@gmail.com>
-// @license      GNU GPLv3
+// @homepageURL  https://github.com/jmahler/monkeyscripts
+// @supportURL   https://github.com/jmahler/monkeyscripts
+// @author       jmahler
+// @copyright    2016, Jeremiah Mahler <jmmahler@gmail.com> (https://github.com/jmahler)
+// @license      GNU GPLv3; https://www.gnu.org/licenses/gpl-3.0.en.html
 // @grant        none
 // @include      http*://*.wikipedia.org/*
 // @include      http*://w.*
