@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Wiki heading link.
-// @version      0.1
+// @version      0.2
 // @description  Create an easy to copy section heading link.
 // @updateURL    https://github.com/jmahler/monkeyscripts/raw/master/wiki-link.js
 // @homepageURL  https://github.com/jmahler/monkeyscripts
