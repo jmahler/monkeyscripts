@@ -5,6 +5,7 @@
 // @source       https://raw.githubusercontent.com/jmahler/monkeyscripts/master/wiki-link.js
 // @homepage     https://github.com/jmahler/monkeyscripts
 // @author       Jeremiah Mahler <jmmahler@gmail.com>
+// @license      GNU GPLv3
 // @grant        none
 // @include      http*://*.wikipedia.org/*
 // @include      http*://w.*
