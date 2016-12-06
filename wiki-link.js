@@ -3,6 +3,7 @@
 // @version      0.2
 // @description  Create an easy to copy section heading link.
 // @updateURL    https://github.com/jmahler/monkeyscripts/raw/master/wiki-link.js
+// @downloadURL  https://github.com/jmahler/monkeyscripts/raw/master/wiki-link.js
 // @homepageURL  https://github.com/jmahler/monkeyscripts
 // @supportURL   https://github.com/jmahler/monkeyscripts
 // @author       jmahler
