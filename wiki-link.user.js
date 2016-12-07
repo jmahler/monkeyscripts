@@ -13,7 +13,6 @@
 // @include      http*://*.wikipedia.org/*
 // @include      http*://w.*
 // @include      http*://wiki.*
-// @exclude      *
 // @run-at       document-end
 // ==/UserScript==
 
