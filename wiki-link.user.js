@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Wiki heading link
-// @version      0.3
+// @version      0.4
 // @description  Create an easy to copy section heading link.
 // @updateURL    https://github.com/jmahler/monkeyscripts/raw/master/wiki-link.js
 // @downloadURL  https://github.com/jmahler/monkeyscripts/raw/master/wiki-link.js
@@ -20,12 +20,22 @@
 (function() {
     'use strict';
 
-    var hs = document.getElementsByClassName('mw-headline');
-    var n = hs.length;
+	// <h2><span class="mw-headline">...</span></h2>
+    var headlines = document.getElementsByClassName('mw-headline');
+    var n = headlines.length;
     for (var i = 0; i < n; i++) {
-        var h = hs[i];
-        var new_span = document.createElement('span');
-        new_span.innerHTML = "&nbsp;[<a href=#" + h.id + ">link</a>]";
-        h.appendChild(new_span);
+        var headline = headlines[i];
+
+		// wrap the current <span> in an <a> to make it a link
+
+		var headline_copy = headline.cloneNode(true);
+
+		// <a href="#"><span class="mw-headline">...</span></a>
+        var outer_a = document.createElement('a');
+		outer_a.href = "#" + headline_copy.id;
+		outer_a.appendChild(headline_copy, outer_a);
+
+		// <h2><a href="#"><span ... </span></a></h2>
+		headline.parentNode.replaceChild(outer_a, headline);
     }
 })();
